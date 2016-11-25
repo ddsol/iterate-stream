@@ -55,11 +55,11 @@ const iterateStream = require('iterate-stream');
 
 co(function*(){
   try {
-    let readme = fs.createReadStream('very-large-text-file.txt', { encoding: 'utf8' });
-    let stream = byline(readme, { keepEmptyLines: true });
+    const readme = fs.createReadStream('very-large-text-file.txt', { encoding: 'utf8' });
+    const stream = byline(readme, { keepEmptyLines: true });
     let lineNum = 1;
 
-    for (let line of yield iterateStream(stream)) {
+    for (const line of yield iterateStream(stream)) {
       console.log(`${lineNum++}: ${yield line}`);
     }
   } catch (err) {
