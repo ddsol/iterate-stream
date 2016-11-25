@@ -1,0 +1,27 @@
+{
+  "name": "iterate-stream",
+  "version": "1.0.0",
+  "description": "Turn a stream into an async iterator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddsol/iterate-stream.git"
+  },
+  "keywords": [
+    "async",
+    "stream",
+    "iterable",
+    "co",
+    "generators",
+    "coroutine"
+  ],
+  "author": "Han de Boer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddsol/iterate-stream/issues"
+  },
+  "homepage": "https://github.com/ddsol/iterate-stream#readme"
+}
